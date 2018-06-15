@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+                 
+        <style>   
+            .cssprop {  
+            padding: 5px;  
+            text-align: center;  
+            background-color: #00FFFF;  
+            border: solid 1px #c3c3c3;  
+            }  
+            
+             #panel {  
+            padding: 50px;  
+            display: none;  
+            }  
+        </style>  
+        
+    </head>  
+    <body>  
+        <div id="flip" class="cssprop">Click to slide down panel</div>  
+        <div id="panel" class="cssprop">Hello Jquery languages.</div>  
+        
+        <script src="jQuery.js"></script>  
+        <script>   
+            $(document).ready(function(){ 
+                
+                $("#flip").click(function(){  
+                    $("#panel").slideDown("slow");  
+                    
+                }); 
+                
+                $("#flip").click(function(){
+                    $("#panel").slideUp("slow");
+                });
+                
+                $("#flip").click(function(){  
+                    $("#panel").slideToggle("slow");  
+                });
+            });  
+        </script>  
+    </body>  
+</html>  

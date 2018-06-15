@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <script src="jQuery.js"></script>  
+
+        <script>  
+            $(document).ready(function(){  
+                $("p").mouseover(function(){  
+                    $("p").css("background-color", "lightgreen");  
+                });  
+                $("p").mouseout(function(){  
+                    $("p").css("background-color", "orange");  
+                  });  
+            });  
+        </script>  
+    </head> 
+    
+    <body>  
+        <p>Move your cursor over this paragraph.</p>  
+    </body>  
+</html>  

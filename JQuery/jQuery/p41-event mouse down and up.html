@@ -1,0 +1,23 @@
+<!DOCTYPE html>    
+<html>    
+    <head>    
+        <script src="jQuery.js"></script>    
+        
+        <script>    
+            $(document).ready(function(){    
+                $("#h1").mousedown(function(){    
+                   $( "div" ).text( "mouse down event triggered" ).show().fadeOut( 2000 );   
+                });
+                $("#h2").mouseup(function(){    
+                   $( "div" ).text( "mouse up event triggered" ).show().fadeOut( 2000 );   
+                });
+            });    
+        </script>    
+    </head> 
+    
+    <body>    
+        <h1 id="h1">Click this heading.</h1>
+        <h1 id="h2">Click this heading.</h1>
+        <div></div>   
+    </body>    
+</html>    

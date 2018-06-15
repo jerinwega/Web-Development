@@ -1,0 +1,21 @@
+<html><head></head>
+    <body>
+        <p id = "demo"></p>
+        <a href="p17_sub.html">click fo demo</a>
+        <button onclick="forward_1()">forward</button>
+        <button onclick="goBack_1()">go back 2 pages</button>
+        <input type="button" name="his"  onclick="func()" value="count">
+        <script>
+            function func (){
+                var his = document.getElementById('demo').innerHTML = history.length;
+            }
+                function forward_1(){
+                    window.history.forward();
+                }
+                 function goBack_1(){
+                    window.history.go(-3);
+                }
+            
+        </script>
+    </body>
+</html>

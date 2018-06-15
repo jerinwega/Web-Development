@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <b>Display the number of URLs in the history list:</b>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <b>One Step back.</b>
+    <button onclick="goBack()">Go Back</button>
+    <br><br>
+    <b>One Step forward.</b>
+    <button onclick="goForward()">Go Forward</button>
+    <br><br>
+    <b>Try It</b>
+    <button onclick="goBack()">Go 2 pages back</button>
+    <script>
+	    function myFunction() 
+	    {
+	        document.getElementById("demo").innerHTML = history.length;
+	    }
+        
+        function goBack() 
+        {
+            window.history.back();
+        }
+        
+        function goForward() 
+        {
+            window.history.forward();
+        }
+        
+        function goBack1() 
+        {
+            window.history.go(-2);
+        }
+    </script>
+</body>
+
+</html>

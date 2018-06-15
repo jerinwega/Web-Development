@@ -1,0 +1,138 @@
+
+@font-face
+{
+    font-family:'Alice';
+    src:url("Assignments/fonts/Alice.eot?") format("eot"),
+        url("Assignments/fonts/Alice.woff") format("woff"),
+        url("Assignments/fonts/Alice.ttf") format("truetype"),
+        url("Assignments/fonts/Alice.svg#Alice") format("svg");
+    
+}
+
+
+@font-face 
+{
+        font-family:'Diavlo Black';
+        src:
+            url("Assignments/fonts/Diavlo_BLACK_II_37.otf") format("otf");
+                    
+    
+}
+
+@font-face
+{
+    font-family:'Raleway';
+    src:url("Assignments/fonts/Raleway-Bold.eot?") format("eot"),
+        url("Assignments/fonts/Raleway-Bold.woff") format("woff"),
+        url("Assignments/fonts/Raleway-Bold.ttf") format("truetype"),
+        url("Assignments/fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
+    
+}
+ 
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+   
+}
+body{
+    background:url(../img/ws_Green_Gradient_Background_1366x768.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+
+h1{
+    font-family: 'Alice';
+    font-weight:normal;
+    font-style:normal;
+    font-size: 45px;
+   
+}
+
+
+.banner1{
+    
+   position: relative;
+    margin:auto;
+    margin-top: 200px;
+    margin-left: 300px;
+    text-align: center;
+    display:block;
+    background: url(../banners/p1_.jpg);
+    
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 30%;
+    width: 50%;
+    border-radius: 10px;
+   
+    box-shadow: 0 0 20px black;
+
+    
+    
+}
+.sub_banner1{
+ height: 30%;
+    width: 50%;
+    padding: 30px;
+    margin-left: 50%;
+
+    
+}
+/*.banner2{
+   display:block;
+    width: 50%;
+    height: 20%; 
+    padding: 30px;
+    background: url(../banners/Webp.net-compress-image.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 18%;
+    
+   
+ 
+    
+    
+}
+.sub_banner2{
+    margin-left: 57%;
+    text-align: center;
+    display:inline-block;
+    
+   
+    
+    
+}*/
+h4, h6{
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+}
+.sub_banner1 h6{
+    color: black;
+   
+}
+.sub_banner1 h1,h4{
+    color: red;
+     text-shadow: 1px 1px black;
+
+}
+.sub_banner1 p{
+    
+     font-family:'Diavlo Black';
+   /* text-shadow: 1px 1px yellow;*/
+    font-weight:normal;
+    font-style:normal;
+    font-size: 60px;
+     /*background: -webkit-linear-gradient(#ccc, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    margin-top: -10px;
+
+  
+}

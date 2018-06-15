@@ -1,0 +1,147 @@
+
+        body {
+            background: url(../img/bg-7-full.jpg);
+            zoom:90%;
+        }
+
+        #main {
+
+            background: url(../img/light-color-background-images-for-websites-8.jpg);
+            border-radius: 10px;
+            border: 0px;
+            margin-top: -3%;
+            margin-left: 15%;
+            margin-right: 15%;
+
+
+
+        }
+
+        body p {
+            margin-top: -.2%;
+        }
+
+        #main_2 {
+            background: url(../img/light-color-background-images-for-websites-8.jpg);
+            border-radius: 10px;
+            border: 0px;
+            margin-top: 1%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        #sub {
+            border: 0px solid white;
+            border-top: 1px solid lightslategray;
+        }
+
+        legend {
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+
+        #pic_1 {
+            color: aqua;
+        }
+
+
+
+        .button_1 {
+
+            font-family: serif;
+            font-weight: 600;
+            font-size: .9em;
+            background-color: darkslateblue;
+            color: white;
+            width: 20%;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 10px;
+
+        }
+
+        .button_1:hover {
+            background-color: green;
+            transition: 0.5;
+        }
+
+        .button_2 {
+
+            font-family: serif;
+            font-weight: 600;
+            font-size: .9em;
+            background-color: darkred;
+            color: white;
+            width: 20%;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 10px;
+
+        }
+
+        .button_2:hover {
+            background-color: green;
+            transition: 0.5;
+
+
+        }
+
+        #srb {
+            background-color: cornflowerblue;
+            color: white;
+            width: 10%;
+            height: 30px;
+            font-weight: 600;
+            border: 2px solid white;
+            border-radius: 10px;
+
+        }
+
+        #srb:hover {
+            background-color: cadetblue;
+            transition: 0.5;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        #t1 th,
+        td {
+            font-size: .9em;
+            font-family: Arial;
+            padding-left: 55px;
+        }
+
+        #t2 th,
+        td {
+            font-family: Arial;
+            font-size: .9em;
+            padding-left: 80px;
+        }
+
+        #main div {
+            padding-left: 255px;
+            width: 100%;
+        }
+        input{
+            border: 0px;
+        border-bottom: 1.8px solid chartreuse;
+         background: transparent;
+        }
+
+       input::placeholder {
+            text-align: center;
+        }
+
+        meter {
+            width: 60%;
+            height: 20px;
+        }
+
+        #sub-Meter {
+            left: 20%;
+            position: relative;
+        }
+   

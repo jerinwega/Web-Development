@@ -1,0 +1,19 @@
+"bepractical" : [
+    
+        {
+            'name' : 'Javascript',
+            'duration': '2months',
+            'price' : '12000'
+        },
+        {
+            'name' : 'Php',
+            'duration':'3months',
+            'price' : '23000'
+        },
+         {
+            'name' : 'Asp Dotnet',
+            'duration': '2months',
+            'price' : '32000'
+        }
+    
+]

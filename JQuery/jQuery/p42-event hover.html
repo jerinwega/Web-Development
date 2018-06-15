@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <script src="jQuery.js"></script>  
+
+        <script>  
+            $(document).ready(function(){  
+                $("p").hover
+                (
+                    function()
+                    {  
+                        $(this).css("background-color", "violet");  
+                    }, 
+                    function()
+                    {  
+                        $(this).css("background-color", "green");  
+                    }
+                );  
+            });  
+        </script>  
+    </head>  
+    
+    <body>  
+    <p>Hover your mouse pointer on me!</p>  
+    </body>  
+</html>  

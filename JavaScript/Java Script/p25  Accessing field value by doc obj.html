@@ -1,0 +1,28 @@
+<html>
+	<body>
+    <!--
+	    ------------------------------------------------------------------------------------------
+        Method	Description
+        ------------------------------------------------------------------------------------------
+        1)	write("string")				writes the given string on the doucment.
+        2)	writeln("string")			writes the given string on the doucment with newline character at the end.
+        3)	getElementById()			returns the element having the given id value.
+        4)	getElementsByName()			returns all the elements having the given name value.
+        5)	getElementsByTagName()		returns all the elements having the given tag name.
+        6)	getElementsByClassName()	returns all the elements having the given class name.
+        -->
+		<script type="text/javascript">  
+			function printvalue(){  
+			var name=document.form1.name.value;
+            var lastname = document.form1.lastname.value;
+			alert("Your First Name is: "+name +" and Last name is: " +lastname);  
+			}  
+		</script>  	  
+		<form name="form1">  
+			Enter Name:
+            <input type="text" name="name"/>  
+            <input type="text" name="lastname">
+			<input type="button" onclick="printvalue()" value="print name"/>  
+		</form> 
+	</body>
+</html>

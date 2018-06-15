@@ -1,0 +1,31 @@
+
+<html>
+    <body>
+        <!--________________________________________
+        Method	Description
+        ________________________________________
+        1. getFullYear()=>returns the year in 4 digit e.g. 2015. It is a new method and suggested 2. than getYear()=>which is now deprecated.
+        3. getMonth()=>returns the month in 2 digit from 0 to 11. So it is better to use getMonth()+1 in your code.
+
+        4. getDate()=>returns the date in 1 or 2 digit from 1 to 31.
+        5. getDay()=>returns the day of week in 1 digit from 0 to 6.
+        6. getHours()=>returns all the elements having the given name value.
+        7. getMinutes()=>returns all the elements having the given class name.
+        8. getSeconds()=>returns all the elements having the given class name.
+        9. getMilliseconds()=>returns all the elements having the given tag name.-->
+
+        <h1>DATE Object: <span id="txt"></span></h1> 
+        <h1>DATE Object Method Result: <span id="txt1"></span></h1> 
+        <script>  
+            var date=new Date();  
+            document.getElementById('txt').innerHTML=date; 
+            var day=date.getDate();  
+            var month=date.getMonth()+1;  
+            var year=date.getFullYear(); 
+            var hour=date.getHours();
+            var min=date.getMinutes();
+            var sec=date.getSeconds();
+            document.getElementById('txt1').innerHTML=day+":"+month+":"+year+":"+hour+":"+min+":"+sec;
+        </script>  
+    </body>
+</html>

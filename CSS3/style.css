@@ -1,0 +1,342 @@
+.one {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation: ja 5s;
+    -webkit-animation: ja 5s;
+}
+
+@-webkit-keyframes ja {
+    from {
+        background-color: red
+    }
+    to {
+        background-color: green
+    }
+}
+
+@keyframes ja {
+    from {
+        background-color: red
+    }
+    to {
+        background-color: green
+    }
+}
+
+
+.two {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: red;
+    animation: ja1 5s;
+    -webkit-animation: ja1 5s;
+}
+
+@-webkit-keyframes ja1 {
+    0% {background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: blue;
+        left: 300px;
+        top: 0px;
+    } 
+    50% {
+        background-color: green;
+        left: 300px;
+        top: 200px;
+    }
+    75% {
+        background-color: yellow;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: pink;
+        left: 0px;
+        top: 0px;
+    }
+
+
+}
+
+@keyframes ja1 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: blue;
+        left: 300px;
+        top: 0px;
+    }
+    50% {
+        background-color: green;
+        left: 300px;
+        top: 200px;
+    }
+    75% {
+        background-color: yellow;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: pink;
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+
+.three {
+    height: 100px;
+
+    background: -webkit-linear-gradient(left, red, green);
+    background: -o-linear-gradient(right, red, green);
+    background: -moz-linear-gradient(right, red, green);
+    background: linear-gradient(red, green, blue, black);
+}
+
+.four {
+    height: 100px;
+    background: -webkit-linear-gradient(left, red, green);
+    background: -webkit-linear-gradient(right, red, green);
+    background: -webkit-linear-gradient(right, red, green);
+    background: -webkit-linear-gradient(right, red, green);
+
+}
+
+.five {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: darkorange;
+    transition: 2s;
+}
+
+.five:hover {
+    width: 400px;
+    height: 400px;
+}
+
+
+.tooltip {
+
+    position: relative;
+    border-bottom: 1px dotted black;
+    display: inline-block;
+
+}
+
+
+.tooltip span {
+    visibility: hidden;
+    text-align: center;
+    width: 120px;
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    position: absolute;
+
+    border-radius: 2px;
+
+}
+
+
+.tooltip:hover span {
+
+    visibility: visible;
+}
+
+
+.outer {
+    margin: 10%;
+    padding: 20px;
+    margin-left: 500px;
+}
+
+.top {
+
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+
+
+}
+
+.top span {
+    visibility: hidden;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    margin-top: -60px;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+.top:hover span {
+
+    visibility: visible;
+}
+
+.bottom {
+
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+
+
+}
+
+.bottom span {
+    visibility: hidden;
+    text-align: center;
+    width: 120px;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin-top: 1px;
+    position: absolute;
+
+    border-radius: 4px;
+
+}
+
+.bottom:hover span {
+
+    visibility: visible;
+}
+
+.left {
+
+    position: relative;
+    display: inline-block;
+
+    border-bottom: 1px dotted black;
+
+
+}
+
+.left span {
+    visibility: hidden;
+    text-align: center;
+    width: 120px;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -30px;
+
+    border-radius: 4px;
+
+}
+
+.left:hover span {
+
+    visibility: visible;
+}
+
+.right {
+    display: inline-block;
+
+    position: relative;
+    border-bottom: 1px dotted black;
+
+
+
+}
+
+.right span {
+    visibility: hidden;
+    text-align: center;
+    width: 120px;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -30px;
+    border-radius: 4px;
+
+}
+
+.right:hover span {
+
+    visibility: visible;
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+   
+    background-color: darkgreen;
+}
+
+.flex1 {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-color: white
+}
+
+.trans {
+    width: 400px;
+    height: 250px;
+    color: white;
+    border: 1px solid red;
+    background-color: rosybrown;
+    transform: translate(200px, 50px);
+
+
+}
+
+.main,
+.sub {
+    width: 300px;
+
+    height: 100px;
+    background-color: lightpink;
+    border: 1px solid black;
+
+
+}
+
+.sub {
+    -ms-transform: rotate(30deg);
+    /* IE 9 */
+    -webkit-transform: rotate(30deg);
+    /* Safari */
+    transform: rotate(30deg);
+    /* Standard syntax */
+}
+
+.skewy, .skewy_sub {
+    width: 300px;
+    height: 100px;
+    background-color: lightpink;
+    border: 1px solid black;
+}
+
+.skewy_sub {
+    -ms-transform: skewY(30deg);
+    /* IE 9 */
+    -webkit-transform: skewY(30deg);
+    /* Safari */
+    /*transform: skewY(30deg);*/
+    transform: skewX(70deg);
+    /* Standard syntax */
+}

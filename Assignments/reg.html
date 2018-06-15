@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Registration Form </title>
+    <style>
+        body {
+            background: url(img/1.jpg);
+
+        }
+
+        form {
+            padding: 30px;
+            left: 15%;
+            position: relative;
+        }
+
+        fieldset {
+
+            width: 760px;
+            padding: 30px;
+            border: 1px solid gray;
+
+
+        }
+
+        meter {
+            width: 50%;
+            height: 20px;
+        }
+
+
+
+        h4 {
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid lightgray;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+        }
+
+        h4 span {
+            background: #fff;
+            padding: 0 10px;
+
+        }
+
+        #sub-Meter {
+            left: 25%;
+            position: relative;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--
+        <script>
+        var x = 1;
+        function abc(){
+            var pid = document.getElementById('sub_Meter');
+            
+            setInterval(function(){
+                if(x<100)
+                    
+                {
+                    x++;
+                    pid.value = x;
+                    
+                }
+                abc();
+                
+            },1000)
+        }
+    </script>
+-->
+
+</head>
+
+<body>
+    <p style="color: white; font-family: fantasy; font-size: 2em" align="center">Registration Form</p>
+    <form>
+
+        <fieldset style="background-color: beige">
+
+            <button style="font-family: sans-serif; font-weight: 600; font-size: .9em; background-color: midnightblue; color: white" ;> Register w/ Facebook <i class="fab fa-facebook-square"></i></button>
+            <button style="font-family: sans-serif; font-weight: 600; font-size: .9em; background-color: #D90000; color: white; float: right" ;> Register /w Google <i class="fab fa-google-plus-square"></i></button>
+            <br><br>
+            <h4><span style="color: lightgray">or</span></h4>
+
+
+
+
+            <label style="font-size: .8em; font-family: sans-serif"><b>First Name</b></label>
+            <input type="text" name="f_name" required autofocus>
+            <label style="font-size: .8em; font-family: sans-serif;"><b>Last Name</b></label>
+            <input type="text" name="l_name" required autofocus>
+            <br><br>
+            <label style="font-size: .8em; font-family: sans-serif"><b>Gender</b></label>
+            <label>
+               <br>
+            <input type="radio" name="gender" value="Male">Male</label>
+            <label>
+            <input type="radio" name="gender" value="Female">Female</label>
+            <br><br>
+            <label style="font-size: .8em; font-family: sans-serif"><b>DOB</b></label>
+
+            <input type="date" value="myDate" required>
+            <br><br>
+            <label style="font-size: .8em; font-family: sans-serif"><b>Known Languages</b></label>
+            <br>
+            <label><input type="checkbox" name="lang1" value="hin"> Hindi</label>
+            <label><input type="checkbox" name="lang2" value="mal">Kannada</label>
+            <label><input type="checkbox" name="lang3" value="eng">English</label>
+            <br><br>
+            <label style="font-size: .8em; font-family: sans-serif"><b>Current Position</b></label>
+
+            <input type="text" id="currentpos" list="CurPos" placeholder="Select">
+            <datalist id="CurPos">
+             <option value="Professional">
+                 <option value="Teacher">
+                     <option value="Student">
+                         <option value="Doctor">
+                             <option value="Architect">
+                                 <option value="Unemployed">
+                                     <option value="Fresher">
+                                         <option value="Lawyer">
+         </datalist>
+
+            <br><br>
+            <label style="font-size: .8em; font-family: sans-serif"><b>Email address</b></label>
+
+            <input type="email" name="mailid" required autofocus>
+
+            <label style="font-size: .8em; font-family: sans-serif"><b>Mobile Number</b></label>
+
+            <input type="number" name="myPNumber">
+            <br><br>
+            <label style="font-size: .8em; font-family: sans-serif"><b>Username</b></label>
+
+            <input type="text" name="username" required autofocus>
+
+            <label style="font-size: .8em; font-family: sans-serif"><b>Password</b></label>
+
+            <input type="password" name="password" required autofocus>
+
+            <label style="font-size: .8em; font-family: sans-serif"><b>Confirm Password</b></label>
+
+            <input type="password" name="c_password" required autofocus>
+            <br><br>
+            <div align="center">
+                <input type="submit" value="Submit" onclick="abc()" style="background-color: #D90000; color: white; width:10%; height: 30px">
+                <input type="reset" value="Clear" style="background-color: #D90000; color: white; width:10%; height: 30px">
+                <br><br>
+
+            </div>
+            <meter id='sub-Meter' min="0" max="100" value="0"></meter>
+        </fieldset>
+
+    </form>
+
+    <script>
+        var x = 1;
+
+        function abc() {
+            var pid = document.getElementById('sub-Meter');
+
+            setInterval(function() {
+                if (x < 100)
+
+                {
+                    x++;
+                    pid.value = x;
+
+                }
+                abc();
+
+            }, 1000)
+        }
+
+    </script>
+</body>
+
+</html>

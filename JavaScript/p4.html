@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> function</title>
+        <style>
+            
+        </style>
+        </head>
+    <body>
+        <input type="button" onclick="msg()" value="call function">
+        
+        
+        <script>
+       function msg(){
+           alert("hi");
+           
+       }
+            msg();
+            
+            
+            var data = 200;//global
+            function a(){
+                var dat = 100;
+                document.writeln("<br><br>" +data+ ":this is global variable<br><br>");
+                document.writeln(dat+ ":this is local variable<br><br>");
+            }
+            
+            function b(){
+                document.writeln(data);
+                
+            }
+            a();
+            b();
+            
+            
+            function m(){
+                window.value = 100;//global variable by window object
+                document.writeln(window.value);
+                
+            }
+            function n(){
+                alert(window.value);
+                document.writeln(window.value);
+            }
+            m();
+            n();
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,48 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Program </title>
+       <style>
+          
+           .demo{
+               background-color: gold;
+               border: 1px solid red;
+               padding: 10px;
+               
+           }
+        </style>
+    </head>
+     <body>
+         <p>para 1</p>
+         
+         <p>para 2</p>
+             <br><br>
+         
+         <button id="addclass">AddCSS</button>
+         <button id="hasclass">CheckCSS</button>
+          <button id="removeclass">RemoveCSS</button>
+         <button id="toggleclass">Toggle_both</button>
+    
+        
+       
+        <script src="JQuery.js"></script>
+         <script>
+             $(document).ready(function(){
+                 $('#addclass').click(function(){
+                     $('p:first').addClass('demo');
+                 });
+                 
+                  $('#hasclass').click(function(){
+                     alert($('p:first').hasClass('demo'));
+                 });
+                 $('#removeclass').click(function(){
+                     $('p:first').removeClass('demo');
+                 });
+                 $('#toggleclass').click(function(){
+                     $('p').toggleClass('demo');
+                 });
+             });
+         </script>
+    </body>
+</html>

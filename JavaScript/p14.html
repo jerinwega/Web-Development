@@ -1,0 +1,41 @@
+
+<html>
+	<body>
+		<script type="text/javascript">  
+			function msg()
+			{  
+				var v= prompt("Who are you?");  
+				alert("I am "+v);
+			}  
+            
+          function msg1()
+			{  
+				var v= confirm("Are u sure?");  
+				if(v==true)
+				{  
+					alert("Deleted");  
+				}  
+				else
+				{  
+					alert("Cancel delete");  
+				}  			  
+			} 
+            
+            function msg2()
+			{  
+				setTimeout(  
+					function()
+					{  
+						alert("Well come to Your world..!");
+                        
+					},
+					3000
+				);  			  
+			}  
+		</script> 
+    
+		<input type="button" value="click" onclick="msg()"/>
+	<input type="button" value="delete record" onclick="msg1()"/>  
+		<input type="button" value="Start Time" onclick="msg2()"/>  
+	</body>
+</html>

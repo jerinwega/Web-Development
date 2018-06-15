@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Diavlo Black';
+    src: url("Assignments/fonts/Diavlo_BLACK_II_37.otf") format("otf");
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(#232526, #414345);
+    background-repeat: no-repeat;
+
+}
+
+
+h3{
+    font-family:'Diavlo Black';
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 30px;  
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.container {
+
+    position: absolute;
+    width: 90%;
+    display: flex;
+    margin-top: 128px;
+    margin-left: 62px;
+
+
+}
+
+.container .one {
+ 
+    height: 400px;
+    width: 300px;
+    margin: 6px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#00c6ff, #0072ff);
+    border-radius: 3px;
+    box-shadow: 0 0 10px red;
+}
+
+
+
+
+.container .one:hover {
+    cursor: pointer;
+  transition: .5s;
+    flex-basis: 45%;
+   
+
+
+}
+.container .one:hover h3 {
+     transition: all .7s ease;
+ padding-bottom: 300px;
+}
+
+
+
+.container .one .expand {
+    
+   background-image: linear-gradient(#232526, #414345);
+   width: 200px;
+    position: relative;
+    top: 50%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+     font-family:'Diavlo Black';
+    text-align: center;
+    line-height: 20px;
+     color: white;
+     font-weight: bold;
+     border-radius: 3px;
+    box-shadow: 0 0 10px red;
+     opacity: 0;
+   
+   
+ }
+
+ .container .one:hover .expand {
+     position: absolute;
+   width: 500px;
+     opacity: 1;
+      transition: .4s;
+ }
+
+
+/**/
+
+
+.container .one .expand1 {
+    
+   background-image: linear-gradient(#232526, #414345);
+   width: 200px;
+    position: relative;
+    top: 50%;
+    left: 41.5%;
+    transform: translate(-50%, -50%);
+     font-family:'Diavlo Black';
+    text-align: center;
+    line-height: 20px;
+     color: white;
+     font-weight: bold;
+     border-radius: 3px;
+    box-shadow: 0 0 10px red;
+     opacity: 0;
+   
+   
+ }
+
+ .container .one:hover .expand1 {
+     position: absolute;
+   width: 500px;
+     opacity: 1;
+      transition: .4s;
+ }
+
+
+/**/
+
+
+.container .one .expand2 {
+    
+   background-image: linear-gradient(#232526, #414345);
+   width: 200px;
+    position: relative;
+    top: 50%;
+    left: 58.5%;
+    transform: translate(-50%, -50%);
+     font-family:'Diavlo Black';
+    text-align: center;
+    line-height: 20px;
+     color: white;
+     font-weight: bold;
+     border-radius: 3px;
+    box-shadow: 0 0 10px red;
+     opacity: 0;
+   
+   
+ }
+
+ .container .one:hover .expand2 {
+     position: absolute;
+   width: 500px;
+     opacity: 1;
+      transition: .4s;
+ }
+
+
+/**/
+
+
+
+
+.container .one .expand3 {
+    
+   background-image: linear-gradient(#232526, #414345);
+   width: 200px;
+    position: relative;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+     font-family:'Diavlo Black';
+    text-align: center;
+    line-height: 20px;
+     color: white;
+     font-weight: bold;
+     border-radius: 3px;
+    box-shadow: 0 0 10px red;
+     opacity: 0;
+   
+   
+ }
+
+ .container .one:hover .expand3 {
+     position: absolute;
+   width: 500px;
+     opacity: 1;
+      transition: .4s;
+ }
+
+
+
+

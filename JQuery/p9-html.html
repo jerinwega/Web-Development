@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Program </title>
+       <style>
+          
+           p, div{
+               background-color: gold;
+               border: 1px solid red;
+               padding: 10px;
+               
+           }
+        </style>
+    </head>
+     <body>
+         <button id="b1">Start</button>
+         <button id="b2">Reset</button>
+         <br><br>
+         <p>para 1</p>
+         <p>para 2</p>
+        <div id="d1"></div>
+         
+    
+  
+       
+        <script src="JQuery.js"></script>
+         <script>
+             $(document).ready(function(){
+                 $('#b1').click(function(){
+                     $('#d1').html("hello <b>jerin</b>").append("<h1>this is Be practical</h1>").before("hi").after("heyy").prepend("use");
+                 });
+                 
+                  $('#b2').click(function(){
+                    location.reload();
+                  });             
+             });
+         </script>
+    </body>
+</html>

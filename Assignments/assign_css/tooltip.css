@@ -1,0 +1,158 @@
+div {
+    margin-top: 80px;
+    margin-left: 300px;
+    position: relative;
+    display: inline-block;
+    color: red;
+
+
+}
+
+.tooltop {
+
+    border-bottom: 1px dotted black;
+
+}
+
+.tooltop span {
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -50px;
+    visibility: hidden;
+    box-shadow: 0 0 5px red;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.tooltop span::after{
+     content: " ";
+    position: absolute;
+    top: 100%;  
+    left: 50%;
+    margin-left: -5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: blue transparent transparent transparent;
+    
+}
+
+.tooltop:hover span {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.toolbottom {
+    border-bottom: 1px dotted black;
+}
+
+.toolbottom span {
+    bottom: -53px;
+    left: -70%;
+    position: absolute;
+    visibility: hidden;
+    box-shadow: 0 0 10px red;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.toolbottom span::after{
+     content: " ";
+    position: absolute;
+    bottom: 100%;  
+    left: 50%;
+    margin-left: -7px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent blue transparent;
+}
+
+.toolbottom:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolright {
+    border-bottom: 1px dotted black;
+}
+
+.toolright span {
+    top: -9px;
+    left: 120%; 
+    position: absolute;
+    visibility: hidden;
+    box-shadow: 0 0 10px red;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.toolright span::after{
+     content: " ";
+    position: absolute;
+    top: 100%; 
+    right: 100%;
+    margin-top: -26px;
+    border-width: 6px;
+    border-style: solid;
+    border-color:  transparent blue transparent transparent;
+}
+
+.toolright:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolleft {
+    border-bottom: 1px dotted black;
+}
+
+.toolleft span {
+    top: -9px;
+    right: 120%; 
+    position: absolute;
+    visibility: hidden;
+    box-shadow: 0 0 10px red;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s;
+
+}
+.toolleft span::after{
+      content: " ";
+    position: absolute;
+    top: 100%; 
+    left: 100%;
+    margin-top: -26px;
+    border-width: 6px;
+    border-style: solid;
+    border-color:  transparent transparent transparent blue;
+}
+
+
+
+.toolleft:hover span {
+
+    visibility: visible;
+    opacity: 1;
+}

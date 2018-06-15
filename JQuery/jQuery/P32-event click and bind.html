@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <script src="jQuery.js"></script>  
+
+        <script>  
+            $(document).ready(function(){  
+                $("p").click(function(){  
+                    alert("This paragraph was clicked.");  
+                });  
+                
+/*bind() method attaches one or more event handlers for selected elements*/
+                
+                $("p").bind("click", function(){  
+                    alert("This paragraph was clicked..!");  
+                });  
+            });  
+        </script>  
+    </head>  
+    <body>  
+    <p>Click on the statement.</p>  
+    </body>  
+</html>  

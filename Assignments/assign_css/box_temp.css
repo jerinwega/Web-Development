@@ -1,0 +1,200 @@
+
+@font-face
+{
+    font-family:'Alice';
+    src:url("Assignments/fonts/Alice.eot?") format("eot"),
+        url("Assignments/fonts/Alice.woff") format("woff"),
+        url("Assignments/fonts/Alice.ttf") format("truetype"),
+        url("Assignments/fonts/Alice.svg#Alice") format("svg");
+    
+}
+@font-face
+{
+    font-family:'Raleway';
+    src:url("Assignments/fonts/Raleway-Bold.eot?") format("eot"),
+        url("Assignments/fonts/Raleway-Bold.woff") format("woff"),
+        url("Assignments/fonts/Raleway-Bold.ttf") format("truetype"),
+        url("Assignments/fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
+    
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+body{
+   
+     /*background: url('../img/light-color-background-images-for-websites-8.jpg');*/
+    background-color: lightgrey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main{
+    margin: auto;
+    margin-left: 220px;
+    margin-right: 220px;
+   /* width: 100%;
+    height: 1000px;*/
+    
+  margin-top: 90px;
+  
+    
+}
+
+/*Box 4*/
+.b4 {
+
+    float: left;
+   
+    height: 500px;
+    width: 350px;
+   background-image: linear-gradient(to bottom right, red 37%, black 30%);
+    border-radius: 5px;
+    color: white;
+     box-shadow: 4px 4px 4px red; 
+    /*box-shadow: 0 0 20px black ; */ 
+}
+
+.b4 img {
+
+    height: 250px;
+    width: 350px;
+    text-align: center;
+    border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+   /* box-shadow: 0 0 10px blue ;    
+    box-shadow: 4px 6px 10px palegreen;*/
+}
+.b4 h4{
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 2px 1px black;
+    
+}
+.b4 p{
+     font-family:'Raleway';
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 40px;
+   text-align: center;
+    text-shadow: 1px 1px black;
+}
+/*Box 5*/
+.b5 {
+
+    float: right;
+    margin-left: 100px;
+    height: 500px;
+    width: 350px;
+    background-image: linear-gradient(to bottom right, blue 37%, black 30%);
+     border-radius: 5px;
+    color: white;
+   box-shadow: 4px 4px 4px blue; 
+}
+
+.b5 img {
+
+    height: 250px;
+    width: 350px;
+    text-align: center;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+   /* box-shadow: 0 0 10px blue ;    
+    box-shadow: 4px 6px 10px palegreen;*/
+}
+.b5 h4{
+     font-family: 'Alice';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+      text-shadow: 2px 1px black;
+    
+}
+  .first{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+    text-align: center;
+       font-family:'Raleway';
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 40px;
+      text-shadow: 1px 1px black;
+  
+}
+
+.button2 button {
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    width: 40%;
+    height: 30px;
+    font-weight: 600;
+   
+    border-radius: 10px;
+
+}
+
+.button2 button:hover {
+
+    background-color: darkcyan;
+    transition: 0.5;
+    color: white;
+}
+
+.b5 dialog {
+    margin-top: -300px;
+    background-color: bisque;
+    margin-left: 400px;
+    width: 600px;
+    height: 480px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+.b5 dialog img{
+    border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+    margin-top: 20px;
+    margin-left: 150px;
+    height: 200px;
+    width: 300px;
+    
+}
+
+.second {
+    width: 500px;
+     font-family:'Raleway';
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.b5 dialog button {
+    margin-top: 30px;
+    margin-left: 45%;
+    background-color: darkcyan;
+    color: white;
+    width: 10%;
+    height: 30px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.b5 dialog button:hover {
+
+    background-color: blue;
+    transition: 0.5;
+}

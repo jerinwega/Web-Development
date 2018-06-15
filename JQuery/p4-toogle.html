@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Program </title>
+       <style>
+           .demo{
+               background-color: red;
+               color: white;
+               padding: 10px;
+           }
+        </style>
+    </head>
+     <body>
+         
+         <button id="toggle" >Toggle</button>
+         
+    
+     
+     <h3>this ia a rhyme</h3>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+        
+         
+        <script src="JQuery.js"></script>
+         <script>
+             $(document).ready(function(){
+               
+               
+                 $('#toggle').click(function(){
+                       $('p').addClass('demo').toggle('slow');
+                     
+                         
+                     });
+                 
+             });
+         </script>
+       
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <style>  
+            .intro {  
+                background-color: brown;
+                text-align: center;
+                color: #fff;  
+                padding: 20px;
+            }  
+        </style>  
+    </head>  
+    <body>  
+        <h1>This is a heading</h1>  
+        <p>This is a paragraph.</p>  
+        <p>This is another paragraph.</p>  
+        <button id="addClass">Click for addClass</button>  
+        <button id="hasClass">Click for hasClass</button>  
+        <button id="removeClass">Click for removeClass</button>  
+        <button id="toggleClass">Click for toggleClass</button>  
+        
+        <script src="jQuery.js"></script>  
+    
+        <script>  
+            $(document).ready(function(){  
+                $("#addClass").click(function(){  
+                    $("p:first").addClass("intro");  
+                });
+                $("#removeClass").click(function(){  
+                    $("p:first").removeClass("intro");  
+                });
+                $("#hasClass").click(function(){  
+                    alert($("p:first").hasClass("intro")); 
+                });
+                $("#toggleClass").click(function(){  
+                    $("p").toggleClass("intro"); 
+                });
+            });  
+        </script>  
+    </body>  
+</html>  

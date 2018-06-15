@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <script src="jQuery.js"></script>  
+        
+        <script>  
+            $(document).ready(function(){  
+                $("#a").click(function(){  
+                    alert("Width of div: " + $("div").width());  
+                    alert("Height of div: " + $("div").height());
+                    
+                   
+                });  
+                $("#j").click(function(){  
+                 alert("Inner width of div is: " + $("div").innerWidth());  
+                    alert("Inner width of div is: " + $("div").innerHeight()); 
+                      });
+                
+                 $("#s").click(function(){  
+                    alert("Outer width of div is: " + $("div").outerWidth());  
+                    alert("Outer width of div is: " + $("div").outerHeight());  
+                }); 
+            });  
+        </script>  
+    </head> 
+    
+    <body>  
+        <div style="height:100px;width:200px;padding:10px;margin:3px;outline:5px solid blue;background-color:lightpink;"></div><br>  
+        <button id="a">Width and height of div</button>  
+        <button id="j">Click here to get the inner width and heiht of the div</button>  
+        <button id="s">Click here to get the outer width and heiht of the div</button>  
+    </body>  
+</html>  

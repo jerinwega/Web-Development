@@ -1,0 +1,94 @@
+@media screen and (max-width:768px){
+    
+@font-face
+{
+    font-family:'Alice';
+    src:url("Assignments/fonts/Alice.eot?") format("eot"),
+        url("Assignments/fonts/Alice.woff") format("woff"),
+        url("Assignments/fonts/Alice.ttf") format("truetype"),
+        url("Assignments/fonts/Alice.svg#Alice") format("svg");
+    
+}
+
+
+@font-face 
+{
+        font-family:'Diavlo Black';
+        src:
+            url("Assignments/fonts/Diavlo_BLACK_II_37.otf") format("otf");
+                    
+    
+}
+
+@font-face
+{
+    font-family:'Raleway';
+    src:url("Assignments/fonts/Raleway-Bold.eot?") format("eot"),
+        url("Assignments/fonts/Raleway-Bold.woff") format("woff"),
+        url("Assignments/fonts/Raleway-Bold.ttf") format("truetype"),
+        url("Assignments/fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
+    
+}
+ 
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+   
+}
+body{
+     background:url(../img/685e18ff8147427079a14ce27d984688.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+h1{
+    font-family: 'Alice';
+    font-weight:normal;
+    font-style:normal;
+    font-size: 45px;
+   
+}
+
+
+.banner1{
+   background:url(../banners/Awesome-Ramazan-Wallpaper.jpg);
+    background-repeat: no-repeat;
+    
+}
+.sub_banner1{
+
+  
+    
+    
+}
+h4, h6{
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+}
+.sub_banner1 h6{
+    color: white;
+    
+}
+.sub_banner1 h1,h4{
+    color: red;
+     text-shadow: 1px 1px black;
+
+}
+.sub_banner1 p{
+     font-family:'Diavlo Black';
+    text-shadow: 1px 1px yellow;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 60px;
+    color: yellow;
+    margin-top: -10px;
+
+  
+}
+
+}

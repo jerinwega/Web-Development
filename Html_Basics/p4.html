@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Program 4
+</title>
+    <style>
+        /*divs can be used and differnt style for different divs*/
+        ol li {
+            list-style-type: lower-alpha;
+            
+        }
+        dl dt {
+            color: blueviolet;
+            font-weight: 100;
+            font-size: 1.4em;
+        }
+        dl dt::first-letter{
+            color: black;
+        }
+        dl dt {
+           text-align: justify;
+        }
+       
+            
+        
+        dl{
+            padding: 30px;
+            width: 50%;
+            left:20%;
+            position:relative;
+        }
+    </style>
+    </head>
+    <body>
+        <!--
+        <ul>
+            <li>1
+            </li>
+        </ul> 
+        <ol>
+            <li>1
+            </li>
+        </ol>
+-->
+        <!--definition list-->
+        <ul><dl>
+            <div style = "border:1px solid #ff2200; border-style: dotted; ">
+            <dt>Angular 4</dt>
+            <dd>angular 5 is better</dd>
+                </div>
+                <br><br><br>
+                
+             <div style = "border:1px solid #ff2200;">
+            <dt>Angular 4</dt>
+            <dd>angular 5 is better</dd>
+                </div>
+            
+        </dl></ul>
+    </body>
+</html>

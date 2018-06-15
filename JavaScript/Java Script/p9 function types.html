@@ -1,0 +1,37 @@
+<html>
+
+<body>
+    <script>
+        document.writeln("<h1>This is parameter function..!</h1>");
+        function getcube(number) {
+            alert(number * number * number);
+        }
+
+        document.writeln("<h1>This is return function..!</h1>");
+        function getInfo() {
+            var a, b, c;
+            a = 10;
+            b = 20;
+            c = a + b;
+            return c;
+           document.write(c);
+        }
+       // getInfo();
+        //document.write("Out Of Function Body.. :" + c);
+
+       document.write(getInfo() + "<br>");
+
+        document.writeln("<h1>This is calling function within function..!</h1>");
+        function display() {
+            var dis = getInfo();
+            document.write("This is Display Function - " + dis);
+        }
+        display();
+
+    </script>
+    <form>
+        <input type="button" value="click" onclick="getcube(4)" />
+    </form>
+</body>
+
+</html>

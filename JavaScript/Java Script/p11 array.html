@@ -1,0 +1,31 @@
+<html>
+
+<body>
+    <script>
+        document.writeln("<h1>Array with literal..!</h1>");
+        var emp = ["AK", "PK", "KHAKE"];
+        document.writeln(emp);
+        for (var i = 0; i < emp.length; i++) {
+            document.write(emp[i] + "<br/>");
+        }
+        
+        document.writeln("<h1>Array with New Instance..!</h1>");
+        var j;
+        var emp = new Array();
+        emp[0] = "Arun";
+        emp[1] = "Varun";
+        emp[2] = "John";
+
+        for (j = 0; j < emp.length; j++) {
+            document.write(emp[j] + "<br>");
+        }
+
+        document.writeln("<h1>Array with Constructor..!</h1>");
+        var emp = new Array("Jai", "Vijay", "Smith");
+        for (k = 0; k < emp.length; k++) {
+            document.write(emp[k] + "<br>");
+        }
+    </script>
+</body>
+
+</html>

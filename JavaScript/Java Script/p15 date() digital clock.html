@@ -1,0 +1,31 @@
+<html>
+
+<body>
+    Current Time: <h1 id="txt"></h1>
+    <script>
+    window.onload = function() 
+    {
+        getTime();
+    }
+
+    function getTime() 
+    {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers<10  
+		document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        setTimeout(
+        	function() 
+	        {
+	            getTime()
+	        }, 
+        1000);
+    }
+    //setInterval("getTime()",1000);//another way  
+    
+    </script>
+</body>
+
+</html>

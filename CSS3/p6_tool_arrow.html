@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html>  
+    <head>
+        <style>  
+        .tooltip {  
+            position: relative;  
+            display: inline-block;  
+            border-bottom: 1px dotted black;  
+        }  
+        .tooltip span {  
+            visibility:hidden;  
+            width: 120px;  
+            background-color: black;  
+            color: #fff;  
+            text-align: center;  
+            border-radius: 6px;  
+            padding: 5px 0;  
+            position: absolute;  
+            top: 150%;  
+            left: 50%;  
+            margin-left: -60px;  
+        }  
+        .tooltip span::after {  
+            content: "";  
+            position: absolute;  
+            bottom: 100%; /*top arrow code for top change bottom as top*/
+            left: 50%;  
+            margin-left: -5px;  
+            border-width: 5px;  
+            border-style: solid;  
+            border-color: transparent transparent black transparent;  
+        }  
+        .tooltip:hover span {  
+            visibility: visible;  
+        }  
+        </style>
+    </head>
+    <body style="text-align:center;">  
+        <h2>Top Arrow Example</h2>  
+        <p>Move your mouse cursor over the below heading</p>  
+        
+        <div class="tooltip"><strong>Welcom to Be-practical</strong>  
+        <span>A solution of all technology</span>  
+        </div>  
+    </body>  
+</html>

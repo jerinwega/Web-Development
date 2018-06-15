@@ -1,0 +1,30 @@
+<!doctype html>  
+<html lang="en">  
+    <head>  
+        <meta charset="utf-8">  
+        <title>focus demo</title>  
+        
+        <script src="jQuery.js"></script>  
+        <style>
+            span{color: red;}
+        </style>
+    </head>  
+
+    <body>  
+        
+        <p>
+            <input type="text"> 
+            <span>Focus starts.. Write your name.</span>
+        </p>  
+        <p>
+            <input type="password"> 
+            <span>Focus starts.. Write your password.</span> 
+        </p> 
+        
+        <script>  
+        $( "input" ).focus(function() {  
+          $( this ).next( "span" ).fadeOut( 2000 );  
+        });  
+        </script>  
+    </body>  
+</html>  

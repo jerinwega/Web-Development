@@ -1,0 +1,138 @@
+ @font-face 
+{
+        font-family:'Diavlo Medium';
+        src:
+            url("Assignments/fonts/Diavlo_MEDIUM_II_37.otf") format("otf");
+                    
+    
+}
+
+* {
+     margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+    font-family:'Diavlo Medium';
+     
+
+ }
+.navi{
+   width: 100%;
+height: 50px;
+    background-color: #333;
+           
+
+
+    
+}
+
+
+.navi_sub ul {
+    
+     list-style-type: none;
+     margin-left: 375px;
+
+    background-color: #333;
+    
+}
+.navi_sub ul li {
+      
+
+    display: inline-block;
+      
+
+}
+
+.navi_sub ul li a {
+   
+        
+   
+
+   display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+
+
+.navi_sub ul li a:hover:not(.active) 
+{
+    
+    background-color: #111;
+  
+}
+
+.navi_sub ul li a.active 
+{
+    background-color: #4CAF50;
+       background-size: cover;
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    
+    .navi_sub ul li {float: none;}
+}
+
+.myHeader{
+    
+    padding-top: 20px;
+    height: 150px;
+     color: white;
+     background-color: #ee3423;
+     font-family:'Diavlo Medium';
+}
+
+
+ .headin{
+
+     margin: auto;
+     line-height: 50px;
+     text-align: center;
+     
+
+ }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:  
+  'left left middle middle right right' 
+  'footer footer footer footer footer footer';
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 430px; 
+}
+
+.left {
+  grid-area: left;
+}
+
+.middle {
+  grid-area: middle;
+}
+
+.right {
+  grid-area: right;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid-container  {
+    grid-template-areas: 
+    'left left left left left left' 
+    'middle middle middle middle middle middle' 
+    'right right right right right right' 
+    'footer footer footer footer footer footer';
+}

@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Program </title>
+       <style>
+           .one{
+               background-color: red;
+               color: white;
+               text-align: center;
+               border:1px solid blue;
+               padding: 5px;
+           }
+           #d2{
+               display: none;
+               padding:100px;
+           }
+        </style>
+    </head>
+     <body>
+         
+        <div id="d1" class="one">click me to expand</div>
+         <div id= "d2" class="one">i am big</div>
+    
+  
+       
+        <script src="JQuery.js"></script>
+         <script>
+             $(document).ready(function(){
+               
+               
+              /*   $('#d1').click(function(){
+                       $('#d2').slideDown('slow');
+                     
+                         
+                     });
+                  $('#d2').click(function(){
+                       $('#d2').slideUp('slow');
+                 });*/
+                  $('#d1').click(function(){
+                      $('#d2').slideToggle('slow');
+                       });
+             });
+         </script>
+       
+    </body>
+</html>

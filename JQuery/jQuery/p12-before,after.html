@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html>  
+    <head> 
+       <style>
+           #div{
+               border: 1px dotted #564070;padding: 20px;
+           }
+           button{background-color: blue;color: #fff; padding: 10px; margin: 10px;}
+        </style> 
+        <script src="jQuery.js"></script>  
+        
+        <script>  
+        $(document).ready(function(){  
+            $("#btnbefore").click(function(){  
+                $("#div").before("<p><b>Hello Javed</b></p>");  
+            }); 
+            $("#btnafter").click(function(){  
+                $("#div").after("<p><b>This is Jquery..!</b></p>");  
+            });
+            $("#btnprepend").click(function(){  
+                $("#div").prepend("<p><b>This is Jquery..!</b></p>");  
+            });
+            $("#btnappend").click(function(){  
+                $("#div").append("<p><b>This is Jquery..!</b></p>");  
+            });
+        });  
+        </script>  
+    </head>  
+    
+    <body>  
+        <button id="btnbefore">Insert content before each p element</button>  
+        <button id="btnafter">Insert content after each p element</button>  
+        <button id="btnprepend">Insert content prepend each p element</button>  
+        <button id="btnappend">Insert content append each p element</button>  
+        <div id="div">
+            <p>Be-practical.</p>  
+            <p>Tech Solutions.</p> 
+        </div> 
+    </body>  
+</html> 

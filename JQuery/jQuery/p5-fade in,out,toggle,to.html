@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+       <style>div{background-color: goldenrod;color: #fff; padding: 10px; width: 100px; height: 100px; display: none;}</style>
+        <script src="jQuery.js"></script>  
+        
+        <script>  
+            $(document).ready(function(){  
+                $("#fadein").click(function(){  
+                    $("#div1").fadeIn("slow");  
+                    $("#div2").fadeIn("fast");  
+                    $("#div3").fadeIn(2000);  
+                });
+                $("#fadeout").click(function(){  
+                    $("#div1").fadeOut("slow");  
+                    $("#div2").fadeOut("fast");  
+                    $("#div3").fadeOut(2000);  
+                });
+                $("#fadeToggle").click(function(){  
+                    $("#div1").fadeToggle("slow");  
+                    $("#div2").fadeToggle("fast");  
+                    $("#div3").fadeToggle(2000);  
+                });
+                $("#fadeto").click(function(){  
+                    $("#div1").fadeTo("slow", 0.6);  
+                    $("#div2").fadeTo("fast", 0.6);  
+                    $("#div3").fadeTo(2000, 0.6);  
+                });
+            });  
+        </script>  
+    </head>
+    
+    <body>    
+        <button id="fadein">FadeIn</button>  
+        <button id="fadeout">FadeOut</button>
+        <button id="fadeToggle">FadeToggle</button>        
+        <button id="fadeto">Fade To</button>
+        <div id="div1"></div><br>
+        <div id="div2"></div><br>
+        <div id="div3"></div>  
+    </body>  
+</html>   

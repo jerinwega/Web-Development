@@ -1,0 +1,82 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Reset </title>
+        <style>
+            body{
+                 padding: 180px;
+            left: 30%;
+            position: relative;
+                
+            }
+        </style>
+       
+    </head>
+
+        <body>
+ <div align="left">
+         <label>Username  </label><input type="text" name="Username" id="a" required autofocus autocomplete="off">
+            <br><br>
+            <label>Email  </label><input type="email" name="email" id="b" required autofocus autocomplete="off">
+            <br><br>
+            <label>Password  </label><input type="password" name="pass" id="c" required autofocus autocomplete="off">
+            <br><br>
+            <label>Mobile Number  </label><input type="number" name="mobile" id="d" required autofocus autocomplete="off">
+            <br><br>
+            <label>Address  </label><textarea name="message" cols="20" rows="2" id="e"></textarea>
+            <br><br>
+            <button onclick="on_reset()">Reset</button>
+     </div>
+            <!--<p id="js_disabled_message">u have no js</p>
+            <script>
+                document.getElementById('js_disabled_message').style.display = 'none';
+            </script>-->
+            
+            <noscript>enable js</noscript>
+        
+            <script>
+            /*    function on_reset(){
+                    
+                    var r = document.getElementById('a');
+                    var s = document.getElementById('b');
+                    var t = document.getElementById('c');
+                    var u = document.getElementById('d');
+                    var v = document.getElementById('e');
+                    r.value='';
+                    s.value='';
+                    t.value='';
+                    u.value='';
+                    v.value='';
+             
+                    
+                    
+                  OR
+                    
+                   
+                }*/
+                
+                function on_reset(){
+                    
+                    var array1=document.querySelectorAll('input');
+                    array1.forEach(function(input){
+                        input.value='';
+                    })
+                    var array2=document.querySelectorAll('textarea');
+                    array2.forEach(function(textarea){
+                        textarea.value='';
+                    })
+                }
+                
+                       /*OR
+                       
+                       setTimeout
+                    window.location.reload(1)
+                   */
+                    
+            </script>
+           
+
+    </body>
+</html>
+

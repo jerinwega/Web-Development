@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html lang="en">  
+    <head>  
+          <meta charset="utf-8">  
+          <title>text demo</title>  
+          <style>  
+              p { background-color: blue;color: #fff;margin: 8px;padding: 10px; border: 2px solid #000;}  
+              b {color:yellow;} 
+              i {}
+          </style>  
+    </head>  
+    
+    <body> 
+       <h2>text() Example..!</h2> 
+        <p><b>Hello! </b>jerin</p>  
+        <p></p> 
+        
+      <h2>val() and change() example..!</h2>
+        
+        <i id="demo"></i><br>
+        <select id="single">    
+            <option>Single</option>    
+            <option>Double</option>    
+            <option>Triple</option>    
+        </select>  
+        
+        <script src="jQuery.js"></script>  
+        <script>  
+            
+         $( "p:first" ).text( $( "p:last" );  
+            
+            
+          function displayVals() {    
+              var singleValues = $( "select" ).val();    
+              $("#demo").html( "<b>Value:</b> "+singleValues);    
+            }    
+            $( "select" ).change( displayVals ); 
+            displayVals();
+        </script>  
+    </body>  
+</html>  

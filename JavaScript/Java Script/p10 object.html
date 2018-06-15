@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <script>
+        /*
+            Creating Objects in JavaScript
+            
+            There are 3 ways to create objects.
+            
+                1. By object literal
+                2. By creating instance of Object directly (using new keyword)
+                3. By using an object constructor (using new keyword)
+
+        */
+
+        // 1. object name={property1:value1,property2:value2.....propertyN:valueN} 
+        document.writeln("<h1>This is literal Object..!</h1>");
+        emp = {
+            id: 102,
+            name: "Shyam Kumar",
+            salary: 40000
+        };
+        document.write(emp.id + " " + emp.name + " " + emp.salary);
+        
+        document.writeln("<h1>This is New Instance Object..!</h1>");
+        var emp = new Object();
+        emp.id = 101;
+        emp.name = "Ravi Malik";
+        emp.salary = 50000;
+        document.write(emp.id + " " + emp.name + " " + emp.salary);
+        
+        document.writeln("<h1>This is Constructor Object..!</h1>");
+        function emp1(id1, name1, salary1) {
+        var id, name,salary;
+        this.id = id1;
+        this.name = name1;
+        this.salary = salary1;
+        }
+        e = new emp1(103,"Chand",30000);
+        document.write(e.id + " " + e.name + " " + e.salary);
+    </script>
+</body>
+
+</html>

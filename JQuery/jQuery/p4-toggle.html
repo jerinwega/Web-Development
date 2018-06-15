@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html>    
+    <head>    
+       <style>.demo{background-color: goldenrod;color: #fff; padding: 10px;}</style>
+        <script src="jQuery.js"></script>    
+        
+        <script>    
+        $(document).ready(function(){    
+            $("button").click(function(){    
+                $("p").addClass("demo").toggle();   // 1000, fast , slow 
+            });    
+        });    
+        </script>    
+    </head>    
+    
+    <body>    
+        <button>Toggle</button>    
+        <h3>This is a little poem..!</h3>  
+        <p>Twinkle, twinkle, little star</p>  
+        <p>How I wonder what you are</p>
+        <p>Up above the world so high</p>  
+        <p>Like a diamond in the sky</p>  
+        <p>Twinkle, twinkle little star</p>
+        <p>How I wonder what you are</p> 
+    </body>    
+</html>    

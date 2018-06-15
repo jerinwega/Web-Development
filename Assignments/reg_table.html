@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>REGISTER</title>
+
+    <link href="assign_css/reg_table.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <p align="center"><img src="img/Register+Now.png" width="300px" height="100px"></p>
+<form id="validation" onreset="lreset()" autocomplete="off">
+    <fieldset id="main">
+        <div>
+            <button class="button_1" style="margin-right:100px" onclick="window.open('https:/facebook.com/', '_blank');"> Register w/ Facebook <i class="fab fa-facebook-square"></i></button>
+
+           <button class="button_2" onclick="window.open('https:/gmail.com/','_blank');" >Register w/ Google <i class="fab fa-google-plus"></i></button>
+        </div>
+        <br>
+        <fieldset id="sub">
+            <legend style="color: lightslategray"><b>OR</b></legend>
+        </fieldset>
+
+
+
+        <legend><img src="img/registered.png" id="pic_1"></legend>
+        
+        
+        <table id="t1">
+            <tr>
+                <th>FIRST NAME</th>
+                <th><input type="text" name="name" value="" placeholder="First Name" required autofocus></th>
+                <th>LAST NAME</th>
+                <th><input type="text" name="name" value="" placeholder="Last Name" required autofocus></th>
+
+            </tr>
+            <tr>
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <th>GENDER</th>
+                <th style="color: crimson"><input type="radio" name="gender" >Male</th>
+                <th style="color: crimson"><input type="radio" name="gender" >Female</th>
+            </tr>
+            <tr>
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+                <th>DOB</th>
+                <th><input type="date" value="myDate"  required></th>
+            </tr>
+            <tr>
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+                <th>KNOWN LANGUAGES</th>
+                <th style="color: crimson"><input type="checkbox" value="eng" name="lang1">English</th>
+                <th style="color: crimson"><input type="checkbox" value="hin" name="lang2">Hindi</th>
+                <th style="color: crimson"><input type="checkbox" value="mal" name="lang3">Malayalam</th>
+                <th style="color: crimson"><input type="checkbox" value="kan" name="lang4">Kannada</th>
+            </tr>
+            <tr>
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+                <th>CURRENT POSITION</th>
+                <th><input type="text" id="currentpos" list="CurrentPosition" placeholder="Select" ></th>
+                <datalist id="CurrentPosition">
+                        <option value="Employed">
+                        <option value="Unemployed">
+                        <option value="Fresher">
+                        <option value="Student">
+                        <option value="Proffesional">
+                        <option value="Doctor">
+                        <option value="Teacher">
+                        <option value="Lawyer">
+                    </datalist>
+                <th>MOBILE NUMBER</th>
+                <th><input type="number" name="myPNumber" placeholder="Mobile Number"></th>
+
+            </tr>
+
+
+        </table>
+
+    </fieldset>
+
+    <fieldset id="main_2">
+        <legend><img src="img/user.png"></legend>
+       
+        <table id="t2">
+            <tr>
+
+                <th>EMAIL ADDRESS</th>
+                <th><input type="email" name="mail_id" value="" id="em" placeholder="Mail ID" required autofocus autocomplete="off"></th>
+                <th>USERNAME</th>
+                <th><input type="text" name="username" value="" id="us" placeholder="Username" required autofocus autocomplete="off"></th>
+            </tr>
+            <tr>
+
+                <td>&nbsp;</td>
+
+            </tr>
+            <tr>
+                <th>PASSWORD</th>
+                <th><input type="password" name="password" value="" id="pa" placeholder="Password" required autofocus autocomplete="off"></th>
+                <th>CONFIRM PASSWORD</th>
+                <th><input type="password" name="c_password" value="" id="cp" placeholder="Confirm" required autofocus autocomplete="off"></th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+           
+        </table>
+       
+        <div align="center">
+            <input type="submit" value="SUBMIT" onclick="abc()" id="srb">
+            <input type="reset" value="CLEAR" id="srb">
+            <!--onclick= "document.getElementById('f').value=''-->
+        </div>
+        <br>
+
+        <meter id='sub-Meter' min="0" max="100" value="0"></meter>
+
+
+    </fieldset>
+   
+</form>
+
+    
+ 
+    <script>
+       
+
+        function abc() {
+            var x = 1;
+            var mail = document.getElementById('em').value;
+             var user = document.getElementById('us').value;
+             var pass = document.getElementById('pa').value;
+             var conf = document.getElementById('cp').value;
+            if(mail !== "" && pass !== "" && user !== "" && conf !== "")
+                {
+                    var pid = document.getElementById('sub-Meter');
+
+            setInterval(function() {
+                if (x < 100)
+
+                {
+                    x = x+20;
+                    pid.value = x;
+
+                }
+              
+
+            }, 1000)
+        }
+            
+            else{
+                    alert("Form is incomplete!");
+                }
+           
+                
+            
+        }
+        
+        function lreset(){
+       var meter = document.getElementById('sub-Meter');
+            meter.value = 0;
+        
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

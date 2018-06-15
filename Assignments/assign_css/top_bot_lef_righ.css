@@ -1,0 +1,578 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    position: relative;
+     
+    height: 100vh;
+    background: linear-gradient(#10416b, black); 
+}
+
+.container{
+     
+    position: absolute;
+   
+      transform: translate(60px, 40px);
+      
+    
+    
+}
+h2{
+    font-family: monospace;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 60px;
+    /*text-shadow: 6px 6px green;*/
+    /*text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;*/
+  
+  text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px black; 
+               
+    
+}
+h2:hover{
+    transform: scale(1.2,1.2);
+    text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px blue; 
+}
+
+
+
+ /*get rid of unwanted outllines*/
+
+/* button:focus {
+    
+    outline: 0;
+    box-shadow: none!important;
+}*/
+
+
+
+/*For left to right transition*/
+
+
+
+
+
+
+.main1 img{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    
+    margin-top: 110px;
+    margin-left: 20px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.overlay1 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background-color: lightgray;
+  opacity: .6;
+  overflow: hidden;
+  width: 0px;
+  height: 200px;
+   
+    margin-top: 110px;
+    margin-left: 20px;
+    transition: .5s ease;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+
+.main1:hover .overlay1{
+    
+    width: 290px;
+    height: 200px;
+   
+    margin-top: 110px;
+    margin-left: 20px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+} 
+
+
+.one1{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    background-image: linear-gradient(black , darkgray);
+    top: 310px;
+    left: 20px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+
+
+
+.overlay1 button{
+    
+    position:relative;
+    top: 40%;
+    left: 50%;
+     margin-left: -60px;
+    background-color: blue;
+    color: white;
+    width: 40%;
+    height: 30px;
+    font-weight: 600;
+    border-style: groove;
+    border-radius: 10px;
+    
+}
+
+
+.overlay1 button:hover {
+
+    background-color: black;
+    transition: 0.5;
+    color: white;
+}
+
+
+.overlay1 dialog{
+   position: absolute;
+    width: 290px;
+    height: 200px;
+   
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.overlay1 dialog img{
+    
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    
+    margin-top: -3px;
+    margin-left: -3px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+  
+    
+}
+
+.overlay1 dialog button {
+    
+    position:relative;
+    top: 80%;
+    left: 60%;
+    
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: 26px;
+    font-weight: 600;
+    
+    border-radius: 10px;
+}
+.overlay1 dialog button:hover {
+
+    background-color: black;
+    transition: 0.5;
+}
+
+
+
+
+/*For top to bottom transition*/
+
+
+
+.main2 img{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+
+    margin-top: 110px;
+    margin-left: 320px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.overlay2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: lightgray;
+  opacity: .6;
+  overflow: hidden;
+  width: 290px;
+  height: 0px;
+    margin-top: 110px;
+    margin-left: 320px;
+    transition: .5s ease;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.main2:hover .overlay2{
+    
+    width: 290px;
+    height: 200px;
+  
+    margin-top: 110px;
+    margin-left: 320px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+} 
+
+
+.one2{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+   
+    background-image: linear-gradient(black , darkgray);
+    top: 310px;
+    left: 320px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+
+
+.overlay2 button{
+    position:relative;
+    top: 40%;
+    left: 50%;
+     margin-left: -60px;
+    background-color: blue;
+    color: white;
+    width: 40%;
+    height: 30px;
+    font-weight: 600;
+    border-style: groove;
+    border-radius: 10px;
+    
+}
+
+
+.overlay2 button:hover {
+
+    background-color: black;
+    transition: 0.5;
+    color: white;
+}
+
+
+.overlay2 dialog{
+   position: absolute;
+    width: 290px;
+    height: 200px;
+   
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.overlay2 dialog img{
+    
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    
+    margin-top: -3px;
+    margin-left: -3px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+  
+    
+}
+
+.overlay2 dialog button {
+    
+    position:relative;
+    top: 80%;
+    left: 60%;
+    
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: 26px;
+    font-weight: 600;
+    
+    border-radius: 10px;
+}
+.overlay2 dialog button:hover {
+
+    background-color: black;
+    transition: 0.5;
+}
+
+
+
+
+/*For right to left transition*/
+
+
+.main3 img{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    
+    margin-top: 110px;
+    margin-left: 630px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.overlay3 {
+  position: absolute;
+  left: 290px;
+  right: 0px;
+   
+  background-color: lightgray;
+  opacity: .6;
+  overflow: hidden;
+  width: 0px;
+  height: 200px;
+   
+    margin-top: 110px;
+    margin-left: 630px;
+    transition: .5s ease;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.main3:hover .overlay3{
+    
+    width: 290px;
+    left: 0px;
+   
+    margin-top: 110px;
+    margin-left: 630px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+} 
+
+
+.one3{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    background-image: linear-gradient(black , darkgray);
+    top: 310px;
+    left: 630px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+
+.overlay3 button{
+    position:relative;
+    top: 40%;
+    left: 50%;
+     margin-left: -60px;
+    background-color: blue;
+    color: white;
+    width: 40%;
+    height: 30px;
+    font-weight: 600;
+    border-style: groove;
+    border-radius: 10px;
+    
+}
+
+
+.overlay3 button:hover {
+
+    background-color: black;
+    transition: 0.5;
+    color: white;
+}
+
+
+.overlay3 dialog{
+   position: absolute;
+    width: 290px;
+    height: 200px;
+   
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.overlay3 dialog img{
+    
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    
+    margin-top: -3px;
+    margin-left: -3px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+  
+    
+}
+
+.overlay3 dialog button {
+    
+    position:relative;
+    top: 80%;
+    left: 60%;
+    
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: 26px;
+    font-weight: 600;
+    
+    border-radius: 10px;
+}
+.overlay3 dialog button:hover {
+
+    background-color: black;
+    transition: 0.5;
+}
+
+
+
+/*For bottom to top transition*/
+
+.main4 img{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    
+    margin-top: 110px;
+    margin-left: 930px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+}
+.overlay4 {
+  position: absolute;
+ 
+  left: 0;
+  right: 0;
+    bottom: -310px;
+  background-color: lightgray;
+  opacity: .6;
+  overflow: hidden;
+  width: 290px;
+  height: 0px;
+   
+    margin-top: 110px;
+    margin-left: 930px;
+    transition: .5s ease;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.main4:hover .overlay4{
+    
+   height: 200px;
+   
+    margin-top: 110px;
+    margin-left: 930px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+} 
+
+
+
+
+
+.one4{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    background-image: linear-gradient(black ,darkgray );
+    top: 310px;
+    left: 930px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+
+.overlay4 button{
+    position:relative;
+    top: 40%;
+    left: 50%;
+     margin-left: -60px;
+    background-color: blue;
+    color: white;
+    width: 40%;
+    height: 30px;
+    font-weight: 600;
+    border-style: groove;
+    border-radius: 10px;
+    
+}
+
+
+.overlay4 button:hover {
+
+    background-color: black;
+    transition: 0.5;
+    color: white;
+}
+
+
+.overlay4 dialog{
+   position: absolute;
+    width: 290px;
+    height: 200px;
+   
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.overlay4 dialog img{
+    
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    
+    margin-top: -3px;
+    margin-left: -3px;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+  
+    
+}
+
+.overlay4 dialog button {
+    
+    position:relative;
+    top: 80%;
+    left: 60%;
+    
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: 26px;
+    font-weight: 600;
+    
+    border-radius: 10px;
+}
+.overlay4 dialog button:hover {
+
+    background-color: black;
+    transition: 0.5;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>    
+<html>    
+    <head>    
+        <script src="jQuery.js"></script>    
+        
+        <script>    
+            $(document).ready(function(){    
+                $("#h1").mouseenter(function(){    
+                   $( "div" ).text( "Mouse entered on heading" ).show().fadeOut(2000);   
+                });
+                $("#h2").mouseleave(function(){
+                    $("div").text("Mouse Leave").show().fadeOut(2000);
+                });
+            });    
+        </script>    
+    </head> 
+    
+    <body>    
+    
+        <h1 id="h1">Enter this heading.</h1>   
+        <h1 id="h2">Enter this heading then leave.</h1>   
+        <div></div>   
+    </body>    
+</html>  

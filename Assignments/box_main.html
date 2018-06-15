@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BOX_MAIN</title>
+</head>
+<link href="assign_css/box_main.css" rel="stylesheet" type="text/css">
+
+<body>
+    <div class="main">
+    <!--/*Box 1*/-->
+    
+    <div class="b1">
+        <div class="i1"><img src="../Assignments/img/pinterest.png"></div>
+    </div>
+    
+    <!--/*Box 2*/-->
+    
+    <div class="b2">
+        <div class="i2">
+            <img src="../Assignments/img/Square-Silver-Bullet-icon.png">
+            <h4><b>MUSIC</b></h4>
+        </div>
+
+
+        <dialog id="myDialog">
+            <p>Music is an art form and cultural activity whose medium is sound organized in time. The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound).</p>
+            <button id="hideme" name="hide" onclick="closeit()">Close</button>
+        </dialog>
+        <div class="button1" align="center">
+            <button id="showme" name="show" onclick="show()"><b>View More</b></button>
+        </div>
+    </div>
+        
+             
+     <!--/*Box 3*/-->
+    
+    <div class="b3">
+        <img src="../Assignments/img/images.png">
+        <h4><b>TWITTER</b></h4>
+        <p class="scrolldown">Twitter (/ˈtwɪtər/) is an online news and social networking service on which users post and interact with messages known as "tweets". Tweets were originally restricted to 140 characters, but on November 7, 2017, this limit was doubled for all languages except Japanese, Korean, and Chinese.</p>
+    </div>
+        
+   <script>
+        var s;
+
+        function show() {
+            s = document.getElementById('myDialog');
+            s.show();
+        }
+
+        function closeit() {
+
+            s.close();
+        }
+
+    </script>
+        </div>
+
+</body>
+
+</html>

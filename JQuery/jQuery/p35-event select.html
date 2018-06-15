@@ -1,0 +1,27 @@
+<!doctype html>  
+<html lang="en">  
+    <head>  
+        <meta charset="utf-8">  
+        <title>select demo</title>  
+        
+        <style>  
+            p {color: red;}  
+            div {color: blue;}  
+        </style>  
+        
+        <script src="jQuery.js"></script>  
+    </head>  
+    <body>  
+        <p>Select the text on the box: click and drag the mouse to select text.</p>  
+        <input type="text" value="javed">  
+        <input type="text" value="ali">  
+        
+        <div></div>  
+        
+        <script>  
+        $( "input" ).select(function() {  
+          $( "div" ).text( "Some text was selected" ).fadeOut( 2000 );  
+        });  
+        </script>  
+    </body>  
+</html> 

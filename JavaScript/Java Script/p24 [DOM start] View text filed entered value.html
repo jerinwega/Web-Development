@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Accessing a Text Field</h3>
+    <input type="text" id="myText" placeholder="Enter Some Thing">
+    <br><br>
+    <button onclick="myFunction()">View Text Content</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

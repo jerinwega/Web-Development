@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> function</title>
+        <style>
+            
+        </style>
+        </head>
+    <body>
+        <input type="button" onclick="getcube(4)" value="click">
+        
+        
+        
+        <script>
+       function getcube(number){
+           alert(number*number*number);
+           
+           
+       }
+            function getinfo(){
+                var a, b, c;
+                a= 10;
+                b= 20;
+                c = a + b;
+                return c;
+            }
+          document.writeln("<br>"+ getinfo() +"<br>");
+            
+            function display(){
+                var obj = getinfo();// object od getinfo() inide display
+                document.writeln("this is the display function:" + obj);
+            }
+            display();
+        </script>
+    </body>
+</html>
+            
+            
+            
+           
+            

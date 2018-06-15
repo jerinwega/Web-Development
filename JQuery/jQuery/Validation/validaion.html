@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+</head>
+
+<body>
+    <form action="" name="registration">
+        <table>
+            <tr>
+                <td><label for="firstname">Full Name</label></td>
+                <td><input type="text" name="firstname" id="firstname" placeholder="Full Name" /></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" placeholder="info@be-prctical.com" /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" placeholder="Password" /></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile</label></td>
+                <td><input type="number" name="mobile" id="mobile" placeholder="Mobile Number" /></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Register</button></td>
+            </tr>            
+        </table>
+    </form>
+
+    <script src="jquery-min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script>
+        $(function() {
+            $("form[name='registration']").validate({
+
+                rules: {
+
+                    firstname: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    },
+                    mobile: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 10
+                    }
+                },
+
+                messages: {
+                    firstname: "<span style='color:red;'>Please enter your firstname</span>",
+                    password: {
+                        required: "<span style='color:red;'>Please provide a password</span>",
+                        minlength: "<span style='color:red;'>Your password must be at least 5 characters long</span>"
+                    },
+                    email: {
+                        required: "<span style='color:red;'>Please enter email address</span>",
+                        email: "<span style='color:red;'>Please enter valid email address</span>"
+                    },
+                    mobile: {
+                        required: "<span style='color:red;'>Please enter mobile number</span>",
+                        minlength: "<span style='color:red;'>Your mobile number must be at least 10 characters long</span>",
+                        maxlength: "<span style='color:red;'>Please enter valid number</span>"
+                    }
+                },
+
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

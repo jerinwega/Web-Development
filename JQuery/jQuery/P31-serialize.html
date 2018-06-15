@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html>  
+    <head> 
+        <!-- It is used in form controls like <input>, <textarea>, <select> etc. --> 
+        <script src="jQuery.js"></script>  
+
+        <script>  
+            $(document).ready(function(){  
+                $("button").click(function(){  
+                    $("div").text($("form").serialize());  
+                });  
+            });  
+        </script>  
+    </head> 
+    
+    <body>  
+        <form>  
+            First name: 
+            <input type="text" name="FirstName" value="Javed"><br>  
+            Middle name: 
+            <input type="text" name="MiddleName" value="Ali"><br> 
+            Last name: 
+            <input type="text" name="LastName" value="Javed Ali"><br> 
+        </form>  
+        <button>Serialize form values</button>  
+    
+        <div></div>  
+    </body>  
+</html>  

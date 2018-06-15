@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script type="text/javascript">
+        var myWindow;
+
+        function openWin() {
+            myWindow = open("http://www.facebook.com");
+        }
+
+        function closeWin() {
+            myWindow.close();
+        }
+
+        function openWin() {
+            var myWindow = window.open("http://www.google.com");
+            myWindow.opener.document.getElementById("demo").innerHTML =
+                "A new window has been opened.";
+        }
+
+    </script>
+    <input type="button" value="Open" onclick="openWin()" />
+    <input type="button" value="Close" onclick="closeWin()" />
+    <button onclick="openWin()">Open myWindow</button>
+    <p id="demo"></p>
+</body>
+
+</html>

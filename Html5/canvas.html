@@ -1,0 +1,39 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Program </title>
+    </head>
+     <body>
+         <canvas id="myCanvas" width="200px" height="100px" style="border: 1px solid red">hi
+         </canvas>
+         <hr>
+           <canvas id="myCanvas1" width="200px" height="100px" style="border: 1px solid red">hi
+         </canvas>
+         <canvas id="myCanvas2" width="200px" height="100px" style="border: 1px solid red">hi
+         </canvas>
+ <script>
+     
+         var c= document.getElementById('myCanvas');
+        var c1 = c.getContext("2d");
+     c1.moveTo(10,0);
+     c1.lineTo(200,100);
+     c1.stroke();
+         </script>
+<script>
+        var c= document.getElementById('myCanvas1');
+        var c1 = c.getContext("2d");
+     c1.beginPath();/*req*/
+     c1.arc(90,50, 49,0,2*Math.PI);/*x,y,size,starting point*/
+     c1.stroke();
+         </script>
+         
+         <script>
+        var c= document.getElementById('myCanvas2');
+        var c1 = c.getContext("2d");
+     c1.font = "30px Arial";
+     c1.strokeText("HTML 5",50,50);
+         </script>
+    </body>
+</html>
+

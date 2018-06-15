@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Program </title>
+        <style>
+        div{
+        background-color: black;
+            color: aliceblue;
+            display: none;
+            padding: 20px;
+            }
+        </style>
+     
+    </head>
+     <body>
+         
+         <button id="show" >show</button>
+         <button id="hide" >hide</button>
+     
+ <div>
+     
+    
+     
+     <h3>this ia a rhyme</h3>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+     <p>twinkle twinkle</p>
+         </div>
+         
+              <script src="JQuery.js"></script>
+         <script>
+             $(document).ready(function(){
+                 
+                 $("#hide").click(function(){
+                     $("div").hide(1000);
+                 });
+                  $("#show").click(function(){
+                     $("div").show(1000);
+                 });
+                 
+             });
+         </script>
+       
+    </body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <style>   
+            div {  
+                width: 100px;  
+                height: 100px;  
+                background-color: red;  
+                -webkit-animation: myfirst 6s; /* Chrome, Safari, Opera */  
+                animation: myfirst 5s;
+            }  
+            /* Chrome, Safari, Opera */  
+            @-webkit-keyframes myfirst {  
+                from {background-color: red;}  
+                to {background-color: green;}  
+            }  
+            /* Standard syntax */  
+            @keyframes myfirst {  
+                from {background-color: red;}  
+                to {background-color: green;}  
+            }  
+        </style>  
+    </head>  
+    <body>  
+        <center>
+            <h1>CSS Animation</h1>
+            <p>CSS Animation property is used to create animation on the webpage.</p>
+        </center>
+        <hr>
+        <p><b>Note:</b> The IE 9 and earlier versions don't support CSS3 animation property. </p>  
+        <div></div>  
+    </body>  
+</html>  

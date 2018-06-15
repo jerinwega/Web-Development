@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <script src="jQuery.js"></script>  
+        
+        <script>  
+            $(document).ready(function(){  
+                $("button").click(function(){  
+                    $("p").wrap("<div></div>");
+                });  
+            });  
+        </script>  
+        
+        <style>  
+            div{background-color: pink;height: 200px;}  
+        </style>  
+    </head>  
+    <body>  
+        <p>Hello Guys!</p>  
+        <p>This is javed</p>  
+        <button>Wrap a div element around each p element</button>  
+    </body>  
+</html>  

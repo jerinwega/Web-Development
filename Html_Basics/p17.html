@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head><title>Login Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            form {
+                padding: 150px;
+                left: 20%;
+                position: relative;
+            }
+            
+            input {
+                height: 30px;
+                width: 100%;
+                border: 2px solid white;
+                border-bottom-color: aqua;
+                
+                 
+                
+            }
+            
+            fieldset {
+                width: 300px;
+                padding: 50px;
+                border-radius: 10px;
+                border: 10px solid;
+                border-bottom-color: blue;
+                border-top-color: cornflowerblue;
+                border-left-color: blue;
+                border-right-color: blue;
+            }
+            legend {
+                text-align: center;
+                color:blue;
+                font-size: 1.6em;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="http://localhost:3001/login" autocomplete="off">
+            <fieldset>
+            <legend>LOGIN FORM</legend>
+                
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Enter Username" required autofocus>
+                 <br><br>
+                
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter Password" required autofocus>
+                <br><br>
+                <div align="center">
+                <input type="submit" value="Login" style="background-color: gray; border-bottom-color: white; width:60%">
+                    </div>
+               
+                </fieldset>
+        
+        </form>
+    </body>
+    
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BOX_MAIN</title>
+</head>
+<link href="assign_css/box_temp.css" rel="stylesheet" type="text/css">
+
+<body>
+    <div class="main">
+<div class="b4">
+        <img src="../Assignments/img/must2.jpg">
+        <h4><b>MUSTANG GT RED</b></h4>
+        <p>Night is when the good boys go home and the beasts come out to roam. Among all the creatures that prowl during the night, the most feared is the MUSTANG GT. </p>
+        </div>
+        
+        
+        
+        <div class="b5">
+        <img src="../Assignments/img/must1.jpg">
+            <h4><b>MUSTANG GT BLUE</b></h4>
+            <p class="first">
+        Welcome to the 2017 MUSTANG GT, the culmination of a century of automotive changing tastes and market requirements. And sure, while the Model T which Ford was referring to, was available in many styles and colours, including black, for years buyers have had to choose from a pretty basic staple of shapes and sizes that manufacturers have to offer. But now, with modern scalable platform development a veritable technical art form, we can have pretty much what we want up top, as everything underneath has been well and truly tried and tested. The 3GT is a poster child for this freedom. And for a platform that underpinned the ‘ultimate driving machine’ mantra for years, the 3 Series Gran Turismo is a strange beast.</p>
+        
+        <dialog id="myDialog2">
+            <img src="../Assignments/img/mustang.jpg">
+        
+            <p class="second">
+            Welcome to the 2017 MUSTANG GT, the culmination of a century of automotive changing tastes and market requirements. And sure, while the Model T which Ford was referring to, was available in many styles and colours, including black, for years buyers have had to choose from a pretty basic staple of shapes and sizes that manufacturers have to offer. But now, with modern scalable platform development a veritable technical art form, we can have pretty much what we want up top, as everything underneath has been well and truly tried and tested. The 3GT is a poster child for this freedom. .</p>
+            <button id="hide" name="hide" onclick="closeme()">Close</button>
+        </dialog>
+        <div class="button2" align="center">
+            <button id="show" name="show" onclick="showme()"><b>View More</b></button>
+        </div>
+        </div>
+        </div>
+    <script>
+        var s;
+
+        function showme() {
+            s = document.getElementById('myDialog2');
+            s.show();
+        }
+
+        function closeme() {
+
+            s.close();
+        }
+    </script>
+    </body>
+</html>

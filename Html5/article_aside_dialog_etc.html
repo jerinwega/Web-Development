@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> article,aside,dialog,details,summary,section </title>
+        <style>
+            section{
+                border: 1px solid red;
+                padding: 10px;
+                    margin: 5%;
+            }
+            section h3{
+                color: rebeccapurple;
+            }
+        </style>
+    </head>
+     <body>
+         <h1>article tag</h1>
+    
+         <article>
+             <h2>Narendra shit
+             </h2>
+             <i>u know i'm shit.
+             </i>
+             <p>blah dfjnskksvndsnvkdsnvdsnkdsnvsvsvsdbdskjbdskbdskbfdkbfdkbfdfksfbdfbdskbfsdkfbkdsfkbdskfdsbkf
+             </p>
+         </article>
+          <hr>
+         <h1>aside tag</h1>
+         
+         <p>nvlsnvlsvnslvnsl<p>
+          <aside>
+         <h3>New delhi</h3>
+         <p> sdjkfdsjfdskjds</p>
+    </aside>
+ <hr>
+         <h1>dialog tag</h1>
+         <dialog id="myDialog" style="background-color: aquamarine; border: 1px dotted black; width: 20%">
+            <p>
+         <q>hi hi hi hi</q>
+            
+           -<cite>me</cite>
+          </p>
+         <button id="hide" name="close" onclick="hide_me()">Close</button>
+         </dialog>
+         
+         <button id="show" name="open" onclick="show_me()">Show</button>
+          <hr>
+         
+         <h1>detail tag</h1>
+         
+         <details><summary>drop it</summary>
+             <p>bdbkdkdskdk</p>
+             <p>bvvbssnsi</p>
+         </details>
+         
+         <hr>
+         <h1>section tag</h1>
+         
+         <section>
+             <h3>Jawaharlal Nehru</h3>
+             <p>he is eh cknkojlbdsbdskbcdsbdskcbkcbkcbjbckbckscbkscbldbldsvblvbvbvbvbsvbdskvbdvbdkvbdskdbvibdsbdi</p>
+         </section>
+         <section>
+             <h3>Bose</h3>
+             <p>he is eh cknkojlbdsbdskbcdsbdskcbkcbkcbjbckbckscbkscbldbldsvblvbvbvbvbsvbdskvbdvbdkvbdskdbvibdsbdi</p>
+         </section>
+         
+         <hr>
+         <h1>time tag and main tag</h1>
+         
+         <time datetime="05/21/2018" title="05/21/2018"><b>Wednesday</b></time>
+         
+         
+           <hr>
+         <main>
+             <article><h4>1st article</h4>
+             </article>
+             <article><h4>2nd article</h4>
+             </article>
+             <article><h4>3rd article</h4>
+             </article>
+         </main>
+         
+         
+         
+         
+         <script>
+             var dia;
+             function  show_me()
+             {
+                 dia = document.getElementById('myDialog');
+                 dia.show();
+                 
+             }
+             function hide_me()
+             {
+                 dia.close();
+             }
+         </script>
+    </body>
+</html>
+

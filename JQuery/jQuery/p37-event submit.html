@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html lang="en">  
+    <head>  
+        <meta charset="utf-8">  
+        <title>submit demo</title>  
+        
+        <style>  
+            p {color: blue;}  
+            span {color: red;}  
+        </style>  
+        
+        <script src="jQuery.js"></script>  
+    </head>  
+    
+    <body>  
+        <p>Type 'javed' to submit this form finally.</p>  
+        <form>  
+            <div>  
+                <input type="text">  
+                <input type="submit">  
+            </div>  
+        </form> 
+        
+        <span></span>  
+        
+        <script>
+            $( "form" ).submit(function( event ) 
+            {  
+                if ( $( "input:first" ).val() === "javed" ) 
+                    {  
+                        $( "span" ).text( "Submitted Successfully." ).show();
+                        return false;  
+                    }  
+                else
+                    {
+                        $( "span" ).text( "Not valid!" ).show().fadeOut( 5000 );  
+                        event.preventDefault();   
+                    }  
+            });  
+        </script>  
+    </body>  
+</html>  
